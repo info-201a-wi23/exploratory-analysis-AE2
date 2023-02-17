@@ -1,23 +1,45 @@
-
+rm(list = ls())
 #TODO move libraries and dataset loading into main RMD file at the end
 
 #TODO Create separate files for the agg_table and sum_info files for the table and summary info in the RMD
 
 #TODO When creating table of films use top 5 look for the films that have either been nominated or won the most 
 
-#TODO look into changing rotation of bar plot
-
-#TODO charts - sideways bar plot for most films won/nominated y = film names, x = num times nominated/won
-#TODO charts - pie chart for race x = %nominations y = race
-
-#TODO charts - line plot with multiple lines where different lines represent different genders or other things. x = ceremony year, y = number of winners by gender
 
 library("ggplot2")
 library("plotly")
 library("dplyr")
 library("openxlsx")
+library(tidyverse)
 
 oscars_data <- read.xlsx("oscars.xlsx")
+
+films_data <- oscars_data %>% 
+     drop_na(film, winner) %>% 
+     group_by(film) %>% 
+     summarize(wins = sum(winner, na.rm = TRUE)) %>% 
+     arrange(desc(wins)) %>% 
+     top_n(5)
+
+
+chart2 <- ggplot(data = films_data) +
+     geom_col(mapping = aes(
+          x = reorder(film, wins),
+          y = wins,
+          fill = film
+     )) +
+     labs(
+          title = "Films with most Oscar wins",
+          x = "film",
+          y = "wins"
+     ) +
+     coord_flip() +
+     theme(legend.position = "none")
+chart2
+
+
+
+
 
 
 
