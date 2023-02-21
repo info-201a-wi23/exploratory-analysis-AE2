@@ -9,10 +9,6 @@
 <<<<<<< HEAD
 oscars_data <- read.xlsx("oscars.xlsx")
 =======
-#library("plotly")
-#library("dplyr")
-#library("openxlsx")
-#library(tidyverse)
 
 #oscars_data <- read.xlsx("oscars.xlsx")
 >>>>>>> d489aaae0b3895a0fcb8b05784dfa921244256cf

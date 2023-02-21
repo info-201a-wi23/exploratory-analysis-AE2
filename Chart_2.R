@@ -8,11 +8,6 @@
 
 <<<<<<< HEAD
 =======
-#library("ggplot2")
-#library("plotly")
-#library("dplyr")
-#library("openxlsx")
-#library(tidyverse)
 
 >>>>>>> d489aaae0b3895a0fcb8b05784dfa921244256cf
 oscars_data <- read.xlsx("oscars.xlsx")
