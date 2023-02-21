@@ -5,13 +5,9 @@
 
 #TODO When creating table of films use top 5 look for the films that have either been nominated or won the most 
 
-
-<<<<<<< HEAD
 oscars_data <- read.xlsx("oscars.xlsx")
-=======
 
 #oscars_data <- read.xlsx("oscars.xlsx")
->>>>>>> d489aaae0b3895a0fcb8b05784dfa921244256cf
 
 films_data <- oscars_data %>% 
      drop_na(film, winner) %>% 
