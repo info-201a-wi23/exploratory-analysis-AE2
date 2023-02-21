@@ -6,20 +6,22 @@ films_data <- oscars_data %>%
      top_n(5)
 
 
-chart1 <- ggplot(data = films_data) +
+ggplot(data = films_data) +
      geom_col(mapping = aes(
           x = reorder(film, wins),
           y = wins,
           fill = film
      )) +
+
      labs(
           title = "Films with most Oscar wins",
           x = "film",
           y = "wins"
      ) +
      coord_flip() +
+     scale_y_continuous(breaks = seq(1, 13, 1)) +
      theme(legend.position = "none")
-chart1
+
 
 
 
