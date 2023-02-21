@@ -10,7 +10,7 @@ library("ggplot2")
 library("plotly")
 library("dplyr")
 library("openxlsx")
-library(tidyverse)
+library("tidyverse")
 
 oscars_data <- read.xlsx("oscars.xlsx")
 
