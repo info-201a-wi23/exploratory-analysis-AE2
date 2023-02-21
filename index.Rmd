@@ -95,7 +95,7 @@ We think some of the possible implications could include things like getting a b
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R scriptv
+According to the Oscars dataset, there have been **`r num_ceremonies`** ceremonies so far. The dataset contains **`r num_films`** unique films. The person who has been nominated the most in the dataset is **`r most_nominated_person`**. The race that shows up the most in the dataset is **`r most_common_race`**. The percentage of that race in the dataset is **`r percent_most_common_race`**%.
 
 ### Table
 

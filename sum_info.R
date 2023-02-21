@@ -18,4 +18,4 @@ most_nominated_person <- oscars_data %>%
      filter(n == max(n)) %>%
      pull(name)
 most_common_race <- names(which.max(table(oscars_data$Race)))
-percent_most_common_race <- max(table(oscars_data$Race))/sum(table(oscars_data$Race)) * 100
+percent_most_common_race <- round(max(table(oscars_data$Race))/sum(table(oscars_data$Race)) * 100)
