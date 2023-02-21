@@ -30,7 +30,10 @@ Are the Oscars Racist, Sexist, or Both? An Exploratory Analysis.
 
 ### Authors
 
-Quinton Pharr, 
+* Terresa Tran
+* Jacqueline Nguyen
+* Quinton Pharr
+* Connor Chan
 
 ### Date
 
@@ -38,38 +41,57 @@ Winter 2022
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main question is about the representation of different racial, ethnic and gender groups within the Oscars. We are worried about this because of the lack of representation in the film industry, to address this concern we will use the Oscars dataset from 1927 to 2020. This is important because we hope the findings from the data will help to promote a more diverse and inclusive industry.
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Film, Media, Awards, Representation, Academy awards dataset (Oscars)
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+For this project, we are going to be looking at data from the Academy Awards more specifically the Oscars. We are going to be examining things like the year in which the film was released, and the year in which the movie was nominated. The Oscar ceremony number, along with the category, gender of the nominee or winner, name of the nominee or winner, and racial profile (ethnicity) of the nominee or winner. Lastly, we are going to be looking at the name of the nominated film and the winners where the data will say true for winners, and false for nominations only.
+For research questions, we are going to be drawing from the inspiration section of the dataset as well as some of our own, including but not limited to 1. Does the representation of different racial groups in the Oscars reflect the racial diversity of the film industry? 2. What was the reason for the Academy to introduce new diversity rules and why were they necessary? 3. Is there an equal representation of men and women in the entertainment industry? 4. Has the representation of different ethnic groups improved over the years, as reflected by the data? 5. What are the most common categories in which films are nominated and awarded at the Oscars? These are the main things we are going to be examining, but we might also make other discoveries along the way. 
 
-### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+### Related Work
+
+Our research is focused on representation in media but more specifically Hollywood and Academy level environments. Film and Media are vastly produced, shared, and honored and tracing the previous Oscar nominees and winners can help us understand trends in who has been given the opportunities to make impacts on society. One related work we are finding inspiration from is an analysis of the overrepresentation of white actors in Hollywood by Svaikovsky, V., et. al in a published study called [Racial Lines](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KERZQY). This study analyzed representation by means of tracking dialogue in 780 different Hollywood films between 1970 to 2014, comparing the dialogue distribution between characters/actors of varying ethnicities. It was concluded that there is a privileged “narrative and casting of white folks” and that as such, “it limits the number of visible and audible minorities in these films.
+
+In a study titled [Top 1000 Highest Grossing Movies](https://www.kaggle.com/datasets/sanjeetsinghnaik/top-1000-highest-grossing-movies) similar topics relating to film are covered through categories including sales, genre, runtime, etc. The comparison between these categories allows for a wide variety of representation. With 1,000 movies and 9 internal categorizations, the data represented is vast and relates to the Oscar dataset we chose to study. In addition, the movie data provides concrete values collected from trusted sources including IMDB and Rotten Tomatoes.
+
+In an article by [Rochester Institute of Technology,](https://www.google.com/url?q=https://reporter.rit.edu/views/there-enough-inclusivity-and-representation-hollywood&sa=D&source=docs&ust=1675316943077850&usg=AOvVaw2hunmjGybppl7GgOeF6HOD) their big question was “Is there enough representation in film?” They go on a deep dive about not only racial/ethnic representation, but also about gender and disability as well. Many top rated films that were ranked highly by audience members were often left out of nominations and out of the Academy Awards altogether. 
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+#### Where did you find the data? Please include a link to the data source  
+https://www.kaggle.com/datasets/dharmikdonga/academy-awards-dataset-oscars?resource=download
+
+#### Who collected the data?  
+The original author is Dharmik Donga, but in the description, it was stated that “I found a basic dataset from Kaggle, but it did not have gender and race of the nominations and winners.” so Dharkmik either drew inspiration from another data set and added gender and race or completely started from the top. Dharkmik also gives an acknowledgment to Raphael Fontes, who is the source for the basic dataset.
+
+#### How was the data collected or generated?  
+The data was collected by The Academy Awards database.
+
+#### Why was the data collected?  
+The data was collected to look at the racial and gender diversity at the Oscars, and also as a way to track data about the Oscars in a more pleasing way.
+
+#### How many observations (rows) are in your data?  
+There are 10.4k rows
+
+#### How many features (columns) are in the data?  
+There are 9 columns/features.
+
+#### What, if any, ethical questions or questions of power do you need to consider when working with this data?
+The data collected from the Oscars between 1927 and 2020 is unbiased data, collected through surveys, with results taken from the majority of votes per question. When working with this data to answer the questions at hand, there are no moral questions or questions of power taken into consideration.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+We think some of the possible implications could include things like getting a better understanding of the representation (or more likely a lack of representation) of different racial and ethnic groups in the Oscars. This data/discovery could help with the development of a more inclusive and diverse film industry. Also getting a better understanding of the reasons behind the Academy's diversity rules and the necessity of such rules could help with the development of policies aimed at promoting diversity and inclusiveness in the film industry. This could then lead to the creation of more equitable opportunities and a more representative entertainment industry. We think this would also lead to more diverse casting and probably more perspectives in films and on tv all around. As seen in the data, the film industry has been dominated by old white males and that leads to a very narrow view of the world through film.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+  The main thing we think we need to consider is the possible limited data availability: The dataset only covers the nominations and winners from 1927 to 2020 and could be considered not as complete as there is no information available past 2020. We think there could also be some biases in the Academy's voting process: The Academy's voting decides the nominations and winners, and might not be representative of the wider population. While this is what we are measuring they might(and probably do) have their own biases and preferences. 
+  We think there could also be some discrepancies within how the categories are recorded. As far as we can tell the only things recorded in this dataset are for cinematography, writing, best picture, best actress/supporting actress, and best actor/supporting actor. So the data is missing all of the other very important categories that come into play when making a movie. We also wonder how measuring/voting on these categories/nominees has changed over time. We assume the process in 1927 was much different than the process in 2020 and probably even again in 2023. We think we potentially miss out on some important information when we don't understand how nominees are chosen and what the criteria are. Personally, we think this whole system would make a lot more sense if everything was audience voted but we guess that takes the “critic” part out of it.
 
 ### Summary Information
 
@@ -86,36 +108,31 @@ knitr::kable(agg_table,
              caption = table_caption)
 ```
 
-Include a table of aggregate information
-
-Describe why you included the table and what information it reveals
+The table we chose represents the Top 5 oscar films nominated the most number of times between the years 1928 and 2020. The data holds over 10,000 film nominations, however, the top 5 films include: A Star is Born (25), Titanic (16), Moulin Rouge (15), Mutiny on the Bounty (15), and All About Eve (14).
+The table displays a reflection of the Oscar Academy’s most celebrated films over the years. By analyzing these top 5 films, critics and fans can learn to appreciate the quality of these appreciated movies, ultimately leading to a more knowledgeable and appreciative audience.
 
 ### Chart 1
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals 4-6 sentences
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
 ``````{r, echo = FALSE, message = FALSE, code = readLines("Chart_1.R")}
-# chart_1
+chart_1
 ```
+
+The bar graph display features Oscar data between the years 1928 and 2020. This specific graph represents award-worthy films with the greatest amount of Oscar wins. The graph is set so the y-axis shows film names and the x-axis shows the numerical amount of wins for the film. The films featured on the graph include Titanic, The Lord of the Rings: The Return of the King, Ben-Hur, West Side Story, The Last Emperor, The English Patient, and Gigi (in descending order). Of these 7 films, Titanic won 12 awards, Lord of the Rings and Ben-Hur tied for 11 awards, West side Story won 10 awards, and The Last Emperor, The English Patient, and Gigi tied for winning 9 awards at the Oscars.
+Overall, the graph provides an overview of the films with the highest amount of Oscar wins, showcasing the accomplishments of these movies. The graph layout is deliberately set up to make it easy to compare film nominations with one another. In addition, the chart reveals trends of Oscar wins over the history of the Oscars, critiques, and film enthusiasts to find and discover which films tend to succeed at the Oscars.
 
 ### Chart 2
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals - 4-6 sentences
 ``````{r, echo = FALSE, message = FALSE, code = readLines("Chart_2.R")}
-#chart_2
+chart_2
 ```
+
+For this chart, we decided to produce a pie chart to represent our data. Pie charts are a great way to organize and show data by representing the different slices as a percentage of the whole. We used the chart to identify the ratio of winners/nominees by race over the total Oscar winners/nominees. Our pie chart slices are broken up into four races: White, Black, Asian, and Hispanic. Through this, we were able to identify that the majority of the winners/nominees were White.
 
 ### Chart 3
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals 4-6 sentences
 ``````{r, echo = FALSE, message = FALSE, code = readLines("Chart_3.R")}
-#chart_3
+chart_3
 ```
+
+In order to answer our question about diversity at the Oscars, one aspect we considered was gender diversity. We created a line chart that tracks the number of Oscar winners per year, ranging from 1928 to 2020, for both female and male nominees. Something to note is that the spread of data for men has an initial sharp climb between the years 1928 and 1955, and subtly declines from 30 men per year to 18 men per year between the years 1955 and 2020. As a result, the female candidates overall hold a gradual increase in winners per year - resulting in a climb from 0 winners in 1930, to 10 female winners in 2020.
+This graph is significant because the visual representation of female vs male nominees has a staggering difference - where no data between males and females overlap. Between the 92 years of Oscar data, men most recently see a decline in winners, while women see an overall climb in winners per year. 

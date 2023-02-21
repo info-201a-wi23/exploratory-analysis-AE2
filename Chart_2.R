@@ -6,13 +6,13 @@
 #TODO When creating table of films use top 5 look for the films that have either been nominated or won the most 
 
 
-# library("ggplot2")
-# library("plotly")
-# library("dplyr")
-# library("openxlsx")
-# library(tidyverse)
-# 
-# oscars_data <- read.xlsx("oscars.xlsx")
+#library("ggplot2")
+#library("plotly")
+#library("dplyr")
+#library("openxlsx")
+#library(tidyverse)
+
+oscars_data <- read.xlsx("oscars.xlsx")
 
 race_data <- oscars_data %>% 
      drop_na(Race, winner) %>%
