@@ -1,14 +1,3 @@
-#rm(list = ls())
-#TODO move libraries and dataset loading into main RMD file at the end
-
-#TODO Create separate files for the agg_table and sum_info files for the table and summary info in the RMD
-
-#TODO When creating table of films use top 5 look for the films that have either been nominated or won the most 
-
-oscars_data <- read.xlsx("oscars.xlsx")
-
-# oscars_data <- read.xlsx("oscars.xlsx")
-
 oscars_data <- oscars_data %>%
      mutate(gender = if_else(gender == "female", "Female", gender))
 
