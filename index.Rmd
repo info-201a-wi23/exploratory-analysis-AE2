@@ -24,9 +24,7 @@ source('agg_table.R')
 source('sum_info.R')
 ```
 
-## Project title
-
-Are the Oscars Racist, Sexist, or Both? An Exploratory Analysis.
+## Are the Oscars Racist, Sexist, or Both? An Exploratory Analysis.
 
 ### Authors
 
@@ -37,7 +35,7 @@ Are the Oscars Racist, Sexist, or Both? An Exploratory Analysis.
 
 ### Date
 
-Winter 2022
+February 20 2023
 
 ### Abstract
 
