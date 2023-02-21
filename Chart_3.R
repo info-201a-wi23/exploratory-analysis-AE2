@@ -7,12 +7,6 @@ rm(list = ls())
 #TODO When creating table of films use top 5 look for the films that have either been nominated or won the most 
 
 
-library("ggplot2")
-library("plotly")
-library("dplyr")
-library("openxlsx")
-library("tidyverse")
-
 oscars_data <- read.xlsx("oscars.xlsx")
 oscars_data <- oscars_data %>%
      mutate(gender = if_else(gender == "female", "Female", gender))
