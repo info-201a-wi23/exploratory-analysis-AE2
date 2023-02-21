@@ -1,4 +1,4 @@
-rm(list = ls())
+#rm(list = ls())
 #TODO move libraries and dataset loading into main RMD file at the end
 
 #TODO Create separate files for the agg_table and sum_info files for the table and summary info in the RMD
@@ -6,6 +6,15 @@ rm(list = ls())
 #TODO When creating table of films use top 5 look for the films that have either been nominated or won the most 
 
 
+<<<<<<< HEAD
+=======
+#library("ggplot2")
+#library("plotly")
+#library("dplyr")
+#library("openxlsx")
+#library(tidyverse)
+
+>>>>>>> d489aaae0b3895a0fcb8b05784dfa921244256cf
 oscars_data <- read.xlsx("oscars.xlsx")
 
 race_data <- oscars_data %>% 
