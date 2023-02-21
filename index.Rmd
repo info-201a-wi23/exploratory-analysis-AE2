@@ -1,34 +1,36 @@
 ---
-title: "Exploratory Analysis"
+title: "Are the Oscars Racist, Sexist, or Both? An Exploratory Analysis."
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-# knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+ knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
-# load necessary ALL libraries
-# library("ggplot2")
-# library("plotly")
-# library("dplyr")
-# library("openxlsx")
-# library(tidyverse)
+#load necessary ALL libraries
+library("ggplot2")
+library("plotly")
+library("dplyr")
+library("openxlsx")
+library(tidyverse)
 
 # load states dataframe into variable `covid` and filter for most recent data
-# oscars_data <- read.xlsx("oscars.xlsx")
+oscars_data <- read.xlsx("oscars.xlsx")
 
 # source all R files
-# source('Chart_1.R')
-# source('Chart_2.R')
-# source('Chart_3.R')
+source('Chart_1.R')
+source('Chart_2.R')
+source('Chart_3.R')
+source('agg_table.R')
+source('sum_info.R')
 ```
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+Are the Oscars Racist, Sexist, or Both? An Exploratory Analysis.
 
 ### Authors
 
-Names of your team members
+Quinton Pharr, 
 
 ### Date
 
@@ -71,9 +73,18 @@ What challenges or limitations might you need to address with your project idea 
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+Write a summary paragraph of findings that includes the 5 values calculated from your summary information R scriptv
 
 ### Table
+
+```{r, echo = FALSE, agg_table}
+table_caption <- "Top 5 Films Nominated the Most"
+
+knitr::kable(agg_table,
+             col.names = c('Film',
+                           'Number of Nominations'),
+             caption = table_caption)
+```
 
 Include a table of aggregate information
 
@@ -88,7 +99,7 @@ Describe why you chose this chart and what information it reveals 4-6 sentences
 Here's an example of how to run an R script inside an RMarkdown file:
 
 ``````{r, echo = FALSE, message = FALSE, code = readLines("Chart_1.R")}
-chart_1
+# chart_1
 ```
 
 ### Chart 2
@@ -97,7 +108,7 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals - 4-6 sentences
 ``````{r, echo = FALSE, message = FALSE, code = readLines("Chart_2.R")}
-chart_2
+#chart_2
 ```
 
 ### Chart 3
@@ -106,5 +117,5 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals 4-6 sentences
 ``````{r, echo = FALSE, message = FALSE, code = readLines("Chart_3.R")}
-chart_3
+#chart_3
 ```
