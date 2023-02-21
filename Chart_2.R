@@ -5,7 +5,7 @@ rm(list = ls())
 
 #TODO When creating table of films use top 5 look for the films that have either been nominated or won the most 
 
-
+# load packages
 library("ggplot2")
 library("plotly")
 library("dplyr")
@@ -22,7 +22,7 @@ race_data <- oscars_data %>%
      arrange(desc(wins))
 
 # create a pie chart
-ggplot(race_data, aes(x = "", y = percent, fill = Race)) +
+chart_2 <- ggplot(race_data, aes(x = "", y = percent, fill = Race)) +
      geom_bar(width = 1, stat = "identity") +
      coord_polar("y", start = 0) +
      labs(title = "Oscar Wins by Race", fill = "Race") +

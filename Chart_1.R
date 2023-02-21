@@ -5,15 +5,17 @@ rm(list = ls())
 
 #TODO When creating table of films use top 5 look for the films that have either been nominated or won the most 
 
-
+# load packages
 library("ggplot2")
 library("plotly")
 library("dplyr")
 library("openxlsx")
 library(tidyverse)
 
+# load oscars data
 oscars_data <- read.xlsx("oscars.xlsx")
 
+# create data frame that sorts oscars_data by winning film and pull top films
 films_data <- oscars_data %>% 
      drop_na(film, winner) %>% 
      group_by(film) %>% 
@@ -21,8 +23,8 @@ films_data <- oscars_data %>%
      arrange(desc(wins)) %>% 
      top_n(5)
 
-
-chart2 <- ggplot(data = films_data) +
+# create bar chart
+chart_1 <- ggplot(data = films_data) +
      geom_col(mapping = aes(
           x = reorder(film, wins),
           y = wins,
@@ -35,7 +37,6 @@ chart2 <- ggplot(data = films_data) +
      ) +
      coord_flip() +
      theme(legend.position = "none")
-chart2
 
 
 
